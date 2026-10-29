@@ -14,12 +14,12 @@ class ScuolaFilosofica:
         #Devo fare un controllo perché devo avere almeno 1 oggetto filosofo
         #per costruire la classe ScuolaFilosofica, come scritto nell'UML
         if len(filosofi) < 1:
-            raise ValueError("Deve essere presente almeno un organello") #il programma da errore se non rispetta la condizione
+            raise ValueError("Deve essere presente almeno un filosofo") #il programma da errore se non rispetta la condizione
         else:
             self._filosofi = filosofi
         
     def descrivi(self):
-        return ("Scuola: " + self.nome + " fondatore: " + self.fondatore + " epoca: " + self.epoca)
+        return ("Scuola: " + self.nome + " Fondatore: " + self.fondatore + " Epoca: " + self.epoca)
     
     def stampa_filosofi(self):
         print("--- Elenco filosofi della scuola " + self.nome + " ---")
