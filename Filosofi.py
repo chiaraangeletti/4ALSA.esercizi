@@ -27,7 +27,7 @@ class ScuolaFilosofica:
             print("- " + f.nome + " (nato nel " + str(f.anno_nascita) + " a.C.)")
         
     def aggiungi_filosofo(self, filosofo):
-        self._filosofi.append(filosofi)
+        self._filosofi.append(filosofo)
         
 class Stoicismo(ScuolaFilosofica):
     def __init__(self, nome, fondatore, epoca, filosofi, valore_virtu):
